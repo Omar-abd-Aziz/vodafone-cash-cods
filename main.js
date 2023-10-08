@@ -12,7 +12,7 @@ window.onclick = async (e) => {
     if ([...e.target.classList].includes("cods")) {
        
         if(e.target.dataset.value=="استعلام عن الرصيد"){
-            document.location.href = "tel:*9*13#";
+            document.location.href = "tel:*9*13%23";
             console.log(e.target.dataset.value);
         };
 
@@ -36,8 +36,8 @@ window.onclick = async (e) => {
                 if(e.isConfirmed){
                     let PhoneNumber = document.querySelector("#PhoneNumber").value.trim();
                     let Price = document.querySelector("#Price").value.trim();
-                    location.href=`tel:*9*7*${PhoneNumber}*${Price}##`;
-                    console.log(`tel:*9*7*${PhoneNumber}*${Price}##`)
+                    location.href=`tel:*9*7*${PhoneNumber}*${Price}%23`;
+                    console.log(`tel:*9*7*${PhoneNumber}*${Price}%23`)
                 };
             });
         };
