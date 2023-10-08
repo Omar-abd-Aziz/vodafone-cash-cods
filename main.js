@@ -12,11 +12,8 @@ window.onclick = async (e) => {
     if ([...e.target.classList].includes("cods")) {
        
         if(e.target.dataset.value=="استعلام عن الرصيد"){
-            document.location.href = "tel:*9*13%23";
-            console.log(e.target.dataset.value);
-        };
-
-
+            location.href = "tel:*9*13%23";
+        } else
         if(e.target.dataset.value=="تحويل فلوس فودافون كاش"){
             Swal.fire({
                 html: `
@@ -37,10 +34,30 @@ window.onclick = async (e) => {
                     let PhoneNumber = document.querySelector("#PhoneNumber").value.trim();
                     let Price = document.querySelector("#Price").value.trim();
                     location.href=`tel:*9*7*${PhoneNumber}*${Price}%23`;
-                    console.log(`tel:*9*7*${PhoneNumber}*${Price}%23`)
                 };
             });
-        };
+        } else
+        if(e.target.dataset.value=="شحن رصيد"){
+            location.href = "tel:*9*10%23";
+        }else
+        if(e.target.dataset.value=="تغيير الرقم السري للمحفظة"){
+            location.href = "tel:*9*2%23";
+        }else
+        if(e.target.dataset.value=="نسيت الرقم السري للمحفظة"){
+            location.href = "tel:*9*12%23";
+        }else
+        if(e.target.dataset.value=="انشاء فيزا شراء اونلاين"){
+            location.href = "tel:*9*100%23";
+        }else
+        if(e.target.dataset.value=="شحن كرت فكة 9 جنية"){
+            location.href = "tel:*9*900%23";
+        }else
+        if(e.target.dataset.value=="شحن كرت فكة 15 جنية"){
+            location.href = "tel:*9*150%23";
+        }else
+        if(e.target.dataset.value=="تاكيد الايداع"){
+            location.href = "tel:*900*2%23";
+        }
 
 
     };
