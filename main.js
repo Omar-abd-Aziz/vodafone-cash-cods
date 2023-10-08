@@ -36,8 +36,8 @@ window.onclick = async (e) => {
                 if(e.isConfirmed){
                     let PhoneNumber = document.querySelector("#PhoneNumber").value.trim();
                     let Price = document.querySelector("#Price").value.trim();
-                    location.href=`tel:*9*7*${PhoneNumber}*${Price}#`;
-                    console.log(`tel:*9*7*${PhoneNumber}*${Price}#`)
+                    location.href=`tel:*9*7*${PhoneNumber}*${Price}##`;
+                    console.log(`tel:*9*7*${PhoneNumber}*${Price}##`)
                 };
             });
         };
