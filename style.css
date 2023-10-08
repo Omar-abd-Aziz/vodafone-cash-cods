@@ -1,0 +1,76 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #eee !important;
+}
+
+
+:root {
+    --main-bg: radial-gradient(circle at top right, rgb(78, 78, 78) 0%, rgb(78, 78, 78) 1%,rgb(72, 72, 72) 1%, rgb(72, 72, 72) 10%,rgb(65, 65, 65) 10%, rgb(65, 65, 65) 22%,rgb(59, 59, 59) 22%, rgb(59, 59, 59) 23%,rgb(53, 53, 53) 23%, rgb(53, 53, 53) 28%,rgb(46, 46, 46) 28%, rgb(46, 46, 46) 37%,rgb(40, 40, 40) 37%, rgb(40, 40, 40) 100%);
+}
+
+.dadOFcods{
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+
+
+.cods{
+    display: block;
+    user-select: none;
+    width: 95%;
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+    background-image: var(--main-bg);
+    font-weight: bold;
+    font-size: 23px;
+    padding: 10px 20px;
+    font-family: cairo;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media (max-width: 500px){
+    .cods{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+
+.Done{
+    padding: 0px 15px;
+    margin: 10px;
+}
+
+
+.addOrderInput{
+    padding: 5px;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+.label{
+    font-size: 22px;
+    font-family: cairo;
+}
